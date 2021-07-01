@@ -1,0 +1,61 @@
+.check__label {
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.check__text {
+  font-family: "Roboto";
+  font-style: normal;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-left: 9px;
+}
+.check-option {
+  text-decoration: underline;
+  color: var(--decor-color);
+  font-weight: 400px;
+}
+
+.check__box {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.check__icon {
+  fill: var(--active-color);
+  border: 1px solid var(--second-color);
+  border-radius: 2px;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  transition: background-color var(--active-transition),
+    fill var(--active-transition);
+}
+.check__label {
+  margin-right: 9px;
+  margin-right: 0;
+
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+.check__box:checked + .check__icon {
+  background-color: var(--decor-color);
+  border-radius: 2px;
+  background-origin: border-box;
+  border-style: none;
+  fill: var(--active-color);
+  transition: background-color var(--active-transition),
+    fill var(--active-transition);
+}

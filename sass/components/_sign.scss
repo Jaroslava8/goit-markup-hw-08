@@ -1,0 +1,109 @@
+.sign {
+  display: inline-block;
+  margin-left: 93px;
+}
+.user {
+  display: flex;
+  margin: 0;
+}
+.sign__text {
+  h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+
+.user__sign {
+  display: block;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  color: var(--contact-color);
+  background-color: var(--user-background);
+  border-style: none;
+  border: 1px solid var(--user-border);
+  filter: drop-shadow(0px 4px 4px var(--box-shadow));
+  border-radius: 4px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  cursor: pointer;
+  transition: border-color var(--active-transition),
+    drop-shadow var(--active-transition), color var(--active-transition);
+
+  &:hover {
+    border-color: var(--decor-color);
+  }
+  &:focus {
+    border-color: var(--decor-color);
+  }
+  &:active {
+    border-color: var(--decor-color);
+  }
+}
+/*
+.user__sign:hover,
+.user__sign:focus-within,
+.user__sign:active {
+  border-color: var(--decor-color);
+}*/
+.sign__button {
+  display: inline-flex;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--active-color);
+  border-style: none;
+  background: var(--web-color);
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px var(--box-shadow);
+  border-radius: 4px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 0;
+  margin: 0;
+  cursor: pointer;
+
+  transition: background-color var(--active-transition),
+    color var(--active-transition);
+
+  &:hover {
+    background-color: var(--decor-color);
+  }
+  &:focus {
+    background-color: var(--decor-color);
+  }
+  &:active {
+    background-color: var(--decor-color);
+  }
+}
+/*
+.sign__button:hover,
+.sign__button:focus,
+.sign__button:active {
+  background-color: var(--decor-color);
+}*/
+.sign__icon {
+  fill: var(--active-color);
+  margin-left: 10px;
+}

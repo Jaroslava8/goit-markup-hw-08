@@ -1,0 +1,308 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-height: 581px;
+  min-width: 528px;
+
+  background: var(--active-color);
+  box-shadow: 0px 1px 3px var(--first-shadow), 0px 1px 1px var(--second-shadow),
+    0px 2px 1px var(--third-shadow);
+  border-radius: 4px;
+
+  transition: background-color var(--active-transition);
+
+  &:hover {
+    border-color: 1px solid var(--web-color);
+  }
+  &:focus {
+    border-color: 1px solid var(--web-color);
+  }
+  &:active {
+    border-color: 1px solid var(--web-color);
+  }
+}
+/*
+  .modal:hover,
+  .modal:focus,
+  .modal:active
+  {
+   border-color: 1px solid var(--web-color);
+  }*/
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--active-color);
+  border: 1px solid var(--modal-color);
+  fill: var(--web-color);
+  cursor: pointer;
+}
+
+.modal__close {
+  display: block;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  fill: var(--web-color);
+}
+/*form*/
+.form {
+  margin-left: 40px;
+  margin-right: 40px;
+  position: relative;
+}
+.comment {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.box__title {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.172;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+}
+.form__icon {
+  display: block;
+  position: absolute;
+
+  top: 50%;
+  left: 15px;
+  transition: fill var(--active-transition);
+
+  &:hover {
+    fill: var(--decor-color);
+    cursor: pointer;
+    border-color: var(--decor-color);
+  }
+}
+.form__text {
+  display: block;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1716;
+  color: var(--main-text-color);
+
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+  transition: color var(--active-transition);
+
+  &:hover {
+    fill: var(--decor-color);
+    cursor: pointer;
+    border-color: var(--decor-color);
+  }
+}
+
+.comment__text {
+  display: block;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1716;
+  color: var(--main-text-color);
+
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+  transition: color var(--active-transition);
+
+  &:hover {
+    fill: var(--decor-color);
+    cursor: pointer;
+    border-color: var(--decor-color);
+  }
+}
+.form__input {
+  display: block;
+  width: 408px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-left: 42px;
+  padding-right: 0;
+  border: 1px solid var(--input-color);
+
+  border-radius: 4px;
+  cursor: var(--web-color) pointer;
+  transition: border-color var(--active-transition);
+
+  &:focus {
+    cursor: pointer;
+    border-color: 1px solid var(--decor-color);
+    outline-color: var(--decor-color);
+  }
+}
+/*
+  .form__icon:hover,
+  .comment__text:hover,
+  .form__text:hover,
+  .form__label:hover,
+  .form__input:hover
+  {
+    fill: var(--decor-color);
+    cursor: pointer;
+    border-color: var(--decor-color);
+  }*/
+.form__label {
+  &:hover {
+    fill: var(--decor-color);
+    cursor: pointer;
+    border-color: var(--decor-color);
+  }
+}
+
+/*
+  .form__input:focus{
+    cursor: pointer;
+    border-color: 1px solid var(--decor-color);
+    outline-color: var(--decor-color);
+  }*/
+
+.form__input:focus + .form__icon {
+  fill: var(--decor-color);
+}
+
+.commentStyle {
+  display: block;
+  width: 448px;
+  height: 120px;
+  margin: 12px 16px;
+  border-style: none;
+
+  border-radius: 4px;
+  outline-style: none;
+  transition: border-color var(--active-transition);
+}
+/*
+  .comment__box:hover,
+  .comment__box:focus{
+   border-color: 1px solid  var(--decor-color);
+    outline-color: 1px solid  var(--decor-color);
+    cursor: pointer;
+  }*/
+
+.comment__box {
+  display: block;
+  width: 448px;
+  height: 120px;
+  margin: auto;
+  resize: none;
+  border: 1px solid var(--input-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  outline-style: none;
+
+  &:hover {
+    border-color: 1px solid var(--decor-color);
+    outline-color: 1px solid var(--decor-color);
+    cursor: pointer;
+  }
+  &:focus {
+    border-color: 1px solid var(--decor-color);
+    outline-color: 1px solid var(--decor-color);
+    cursor: pointer;
+  }
+}
+/*
+  .comment__box:hover,
+  .comment__box:focus{
+   border: 1px solid  var(--decor-color);
+   outline-color: 1px solid  var(--decor-color);
+  cursor: pointer;
+  }*/
+
+.comment__box ::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--placeholder-color);
+  padding: 12px 16px;
+}
+/*
+  .commentStyle:hover,
+  .commentStyle:focus
+  {
+   border-color: var(--comment-color);
+  }
+  */
+
+.form__button {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--active-color);
+  cursor: pointer;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  border-color: inherit;
+  background: var(--order-bottom-active);
+  box-shadow: 0px 4px 4px var(--box-shadow);
+  transition: background-color var(--active-transition),
+    color var(--active-transition), border-color var(--active-transition),
+    box-shadow var(--active-transition);
+
+  &:hover {
+    background-color: var(--comment-color);
+    box-shadow: 0px 4px 4px var(--box-shadow);
+  }
+  &:focus {
+    background-color: var(--comment-color);
+    box-shadow: 0px 4px 4px var(--box-shadow);
+  }
+  &:active {
+    background-color: var(--comment-color);
+    box-shadow: 0px 4px 4px var(--box-shadow);
+  }
+}
+/*
+   .form__button:hover,
+   .form__button:focus,
+   .form__button:active
+   {
+    background-color: var(--comment-color);
+    box-shadow: 0px 4px 4px var(--box-shadow);
+   }*/

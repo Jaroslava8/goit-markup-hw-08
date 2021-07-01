@@ -1,0 +1,119 @@
+.team {
+  background: var(--button-background);
+  text-align: center;
+  padding: 94px 0;
+}
+
+.team__heading {
+  font-style: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1719;
+  padding: 0;
+  margin-bottom: 50px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.team__block {
+  display: flex;
+  text-align: center;
+}
+
+.team__style {
+  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__style:last-child {
+  margin-right: 0;
+}
+.team__image {
+  margin-right: 30px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.team__name {
+  padding: 30px;
+  background: var(--active-color);
+  box-shadow: 0px 1px 3px var(--first-shadow), 0px 1px 1px var(--second-shadow),
+    0px 2px 1px var(--third-shadow);
+  border: 1px solid #ececec;
+}
+.team__title {
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.team__profession {
+  margin: 0;
+  color: var(--main-text-color);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1718;
+  text-align: center;
+  letter-spacing: 0, 03em;
+  color: var(--team--text);
+  margin-bottom: 16px;
+}
+
+.social {
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+.social__unit {
+  margin: 0;
+}
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  transition: fill var(--active-transition),
+    background-color var(--active-transition);
+
+  &:hover {
+    background: var(--order-bottom-active);
+  }
+  &:focus {
+    background: var(--order-bottom-active);
+  }
+}
+/*
+  .social__link:hover,
+  .social__link:focus
+  {
+  background: var(--order-bottom-active);
+  }*/
+
+.social__icon {
+  fill: var(--icon-color);
+  transition: fill var(--active-transition),
+    background-color var(--active-transition);
+
+  &:hover {
+    fill: var(--active-color);
+    cursor: pointer;
+  }
+  &:focus {
+    fill: var(--active-color);
+    cursor: pointer;
+  }
+}
+/*
+  .social__icon:hover,
+  .social__icon:focus{
+    fill: var(--active-color);
+    cursor: pointer;
+  
+  }*/

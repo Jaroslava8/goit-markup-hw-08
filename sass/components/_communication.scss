@@ -1,0 +1,64 @@
+.communication {
+  .section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+.communication__item {
+  justify-content: center;
+}
+.communication__unit {
+  width: 270px;
+}
+.communication__title {
+  text-transform: uppercase;
+  line-height: 1.1721;
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: 700;
+  line-height: 1.1721;
+  color: var(--text-color);
+}
+.communication__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-style: 400;
+  font-size: 14px;
+  color: var(--main-text-color);
+  line-height: 1.7142;
+}
+
+.communication__unit:last-child {
+  margin-right: 0px;
+}
+
+.service__title {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: 700;
+  line-height: 1.1719;
+  font-size: 36px;
+  width: 270;
+  margin-bottom: 50px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+.communication__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
