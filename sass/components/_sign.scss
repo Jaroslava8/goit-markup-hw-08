@@ -1,10 +1,15 @@
 .sign {
-  display: inline-block;
-  margin-left: 93px;
+  display: block;
+  /* margin-left: 93px;*/
 }
-.user {
-  display: flex;
+/*.user {
+
   margin: 0;
+}*/
+.user {
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 .sign__text {
   h3 {
@@ -22,11 +27,15 @@
 }
 
 .user__sign {
-  display: block;
-  width: 358px;
+  display: inline-block;
+  /* width: 358px;
+margin-right: 12px;
+  padding-left: 16px;*/
+
+  width: 100%;
   height: 50px;
-  margin-right: 12px;
-  padding-left: 16px;
+  margin-bottom: 20px;
+
   color: var(--contact-color);
   background-color: var(--user-background);
   border-style: none;
@@ -60,7 +69,9 @@
   border-color: var(--decor-color);
 }*/
 .sign__button {
-  display: inline-flex;
+  /*display: inline-block;*/
+
+  display: block;
   align-items: center;
 
   width: 200px;

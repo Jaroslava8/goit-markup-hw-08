@@ -1,15 +1,40 @@
 .communication {
   .section {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
+    /*future-list*/
+    /* display: flex;*/
+    /*justify-content: space-between;*/
+
+    /* margin: 0;*/
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
-.communication__item {
+.communication__icons {
+  width: 100%;
+
   justify-content: center;
+  align-items: center;
+  /*margin-bottom: 30px;
+  margin-bottom: 30px;*/
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
+/*.communication__item {
+  justify-content: center;
+}*/
 .communication__unit {
-  width: 270px;
+  /*item*/
+  /* width: 270px;*/
+  width: 100%;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
 .communication__title {
   text-transform: uppercase;
@@ -24,7 +49,11 @@
   font-style: 700;
   line-height: 1.1721;
   color: var(--text-color);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color);
 }
+
 .communication__text {
   margin: 0;
   padding: 0;
@@ -33,10 +62,15 @@
   font-size: 14px;
   color: var(--main-text-color);
   line-height: 1.7142;
+  text-align: center;
 }
 
-.communication__unit:last-child {
+/*.communication__unit:last-child {
   margin-right: 0px;
+}*/
+
+.communication__unit:last-child {
+  margin-bottom: 0px;
 }
 
 .service__title {
@@ -54,11 +88,13 @@
 }
 
 .communication__icon {
-  display: flex;
+  /* display: flex;*/
+  display: block;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-  margin-bottom: 30px;
+  /*  margin-bottom: 30px;*/
+
   background: #f5f4fa;
   border-radius: 4px;
 }
