@@ -23,42 +23,23 @@ a {
 .container {
   width: 100%;
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px){
+    width: 480px;
+  }
+  @media screen and (min-width: 768px){
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px){
+    width: 1200px;
+  }
 }
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-// 480-767 adaptive mobile container
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    margin: 0 auto;
-  }
-}
-
-// 768-1199 adaptive tablet container
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-// 1200+ adaptive tablet container
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-
-
 img,
 a,
 b {
@@ -70,4 +51,37 @@ b {
   color: inherit;
   transition: color 250ms ;
 }
+
+
+// 480-767 adaptive mobile container
+
+
+// @media screen and (min-width: 480px) {
+//   .container {
+//     width: 480px;
+//     margin: 0 auto;
+//   }
+// }
+
+// 768-1199 adaptive tablet container
+// @media screen and (min-width: 768px) {
+//   .container {
+//     width: 768px;
+//   }
+// }
+
+// 1200+ adaptive tablet container
+// @media screen and (min-width: 1200px) {
+//   .container {
+//     width: 1200px;
+//   }
+
+//   .section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+// }
+
+
+
 

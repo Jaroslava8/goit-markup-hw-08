@@ -34,22 +34,6 @@
   }
 }
 
-.footer__logo {
-  color: var(--web-color);
-}
-.footer__text {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-
-  display: block;
-  color: var(--text-color);
-  color: var(--active-color);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1738;
-  margin-top: 0;
-}
 .footer__address {
   display: block;
   font-family: "Roboto";
@@ -191,12 +175,12 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__contacts {
-    display: flex;
+ 
     align-items: baseline;
     justify-content: space-around;
   }
   .floor{
-    display: flex;
+ 
     align-items: baseline;
     justify-content: space-around;
   }
