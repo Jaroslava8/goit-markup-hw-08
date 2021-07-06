@@ -88,6 +88,26 @@ a {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 480px) {
+  .section {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 1200px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
 img,
 a,
 b {
@@ -718,7 +738,7 @@ b {
   margin-top: -30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__unit {
     flex-basis: calc((100% - 60px) / 2);
   }
