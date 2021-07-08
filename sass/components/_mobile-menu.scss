@@ -1,142 +1,112 @@
-/*mobile-button*/
-.menu-opener-btn {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 10px 0;
-  line-height: 0;
-}
-
-.menu-opener-btn__icon {
-  fill: var(--titles-text-color);
-  transition: fill 250ms var(--timing-func);
-
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .menu-opener-btn {
- display: none;
-  }
-}
-
-/*mobile-menu
-*/
-.mobile-menu__backdrop {
-  &.is-open {
-    visibility: visible;
-    pointer-events: auto;
-    opacity: 1;
-  }
-
-  &.is-close {
-    transition: visibility 250ms linear 250ms, pointer-events 250ms linear 250ms,
-      opacity 250ms linear 250ms;
-    visibility: hidden;
-    pointer-events: none;
-    opacity: 0;
-  }
-}
-
-.mobile-menu {
-  position: fixed;
+.mobile-nav {
+  position: absolute;
+  background-color: var(--active-color);
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--alternate-logo-color);
-  overflow: auto;
-
-  transform: translateY(-100%);
-
-  transition: transform 250ms var(--timing-func) 125ms;
-
-  .mobile-menu__backdrop.is-open & {
-    transform: translateY(0);
-  }
-
-  .mobile-menu__backdrop.is-close & {
-    transition: transform 250ms var(--timing-func);
-  }
+  width: 100vw;
+  height: 100vh;
 }
-
-.mobile-menu__container {
+.menu-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
-  padding-right: 40px;
 }
-
-.mobile-menu__close-btn {
+.menu-open {
+  border-style: none;
+  background-color: #ffffff;
+  &:hover {
+    fill: var(--decor-color);
+    cursor: pointer;
+  }
+  &:focus {
+    cursor: pointer;
+    fill: var(--decor-color);
+  }
+}
+.menu-close {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  line-height: 0;
-  transform: scale(0);
-  transition: transform 250ms var(--timing-func) 375ms;
-
-  .mobile-menu__backdrop.is-open & {
-    transform: scale(1);
+  right: 25px;
+  top: 21px;
+  display: block;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  fill: var(--text-color);
+  background-color: #ffffff;
+  border-style: none;
+  &:hover {
+    fill: var(--decor-color);
+    cursor: pointer;
   }
-}
-
-.mobile-menu__close-icon {
-  fill: var(--titles-text-color);
-  transition: fill 250ms var(--timing-func);
-
-  &:hover,
   &:focus {
-    fill: var(--accent-color);
+    cursor: pointer;
+    fill: var(--decor-color);
   }
 }
-
-.mobile-menu__contacts {
-  margin-top: auto;
-  margin-bottom: 64px;
+.mobile-close {
+  background-color: #ffffff;
+  border-style: none;
+}
+.mobile-menu {
+  padding-top: 48px;
+  padding-left: 40px;
+}
+.mobile-menu__item {
   font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-}
-
-.mobile-menu__phone-link {
   margin-bottom: 32px;
-  font-size: 34px;
-  line-height: 1.18;
-  color: var(--accent-color);
-
-  &:hover,
+  &:hover {
+    color: var(--decor-color);
+    cursor: pointer;
+  }
   &:focus {
-    color: var(--accent-color);
+    cursor: pointer;
+    color: var(--decor-color);
+  }
+  &:active {
+    color: var(--decor-color);
+    cursor: pointer;
   }
 }
 
-.mobile-menu_mail-link {
+.mobile-contacts {
+  padding-left: 40px;
+}
+.mobile-contacts__item {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
-  color: var(--primary-text-color);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  margin-bottom: 32px;
 }
+.mobile-contacts__item:first-child {
+  color: rgba(33, 150, 243, 1);
+}
+.mobile-media {
+  display: flex;
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
+.mobile-media__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: var(--web-color);
 
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-
-  .mobile-menu__backdrop {
-    display: none;
-  }
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.mobile-nav.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }

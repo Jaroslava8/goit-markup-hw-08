@@ -1,5 +1,4 @@
-/*0-480*/
-.clients{
+.clients {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -31,7 +30,7 @@
     fill: var(--web-color);
   }
 }
-.clients__unit{
+.clients__unit {
   &:hover {
     fill: var(--web-color);
     border-color: var(--web-color);
@@ -62,7 +61,6 @@
   margin-right: 0;
 }
 
-
 .clients__unit {
   height: 92px;
   display: flex;
@@ -71,53 +69,32 @@
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   transition: fill var(--active-transition),
-  border-color var(--active-transition);
+    border-color var(--active-transition);
   margin-left: 30px;
-  margin-top: 30px;}
+  margin-top: 30px;
+}
 
-  
-.clients__list{
+.clients__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-  
-
 @media screen and (min-width: 480px) and (max-width: 767px) {
- .clients__unit {
-   
+  .clients__unit {
     flex-basis: calc((100% - 60px) / 2);
-  }}
-
-  @media screen and (min-width: 768px) {
-    .clients__unit{
-      flex-basis: calc((100% - 90px) / 3);
-    }
   }
-  
-  @media screen and (min-width: 1200px) {
-    .clients__unit {
-      flex-basis: calc((100% - 180px) / 6);
-    }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__unit {
+    flex-basis: calc((100% - 90px) / 3);
   }
+}
 
-
-
-
-
-
-    
- 
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (min-width: 1200px) {
+  .clients__unit {
+    flex-basis: calc((100% - 180px) / 6);
+  }
+}

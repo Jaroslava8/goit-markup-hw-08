@@ -24,13 +24,7 @@
     border-color: 1px solid var(--web-color);
   }
 }
-/*
-  .modal:hover,
-  .modal:focus,
-  .modal:active
-  {
-   border-color: 1px solid var(--web-color);
-  }*/
+
 .modal__button {
   position: absolute;
   top: 8px;
@@ -156,17 +150,7 @@
     outline-color: var(--decor-color);
   }
 }
-/*
-  .form__icon:hover,
-  .comment__text:hover,
-  .form__text:hover,
-  .form__label:hover,
-  .form__input:hover
-  {
-    fill: var(--decor-color);
-    cursor: pointer;
-    border-color: var(--decor-color);
-  }*/
+
 .form__label {
   &:hover {
     fill: var(--decor-color);
@@ -174,13 +158,6 @@
     border-color: var(--decor-color);
   }
 }
-
-/*
-  .form__input:focus{
-    cursor: pointer;
-    border-color: 1px solid var(--decor-color);
-    outline-color: var(--decor-color);
-  }*/
 
 .form__input:focus + .form__icon {
   fill: var(--decor-color);
@@ -197,13 +174,6 @@
   outline-style: none;
   transition: border-color var(--active-transition);
 }
-/*
-  .comment__box:hover,
-  .comment__box:focus{
-   border-color: 1px solid  var(--decor-color);
-    outline-color: 1px solid  var(--decor-color);
-    cursor: pointer;
-  }*/
 
 .comment__box {
   display: block;
@@ -228,13 +198,6 @@
     cursor: pointer;
   }
 }
-/*
-  .comment__box:hover,
-  .comment__box:focus{
-   border: 1px solid  var(--decor-color);
-   outline-color: 1px solid  var(--decor-color);
-  cursor: pointer;
-  }*/
 
 .comment__box ::placeholder {
   font-family: "Roboto";
@@ -246,13 +209,6 @@
   color: var(--placeholder-color);
   padding: 12px 16px;
 }
-/*
-  .commentStyle:hover,
-  .commentStyle:focus
-  {
-   border-color: var(--comment-color);
-  }
-  */
 
 .form__button {
   display: block;
@@ -298,11 +254,3 @@
     box-shadow: 0px 4px 4px var(--box-shadow);
   }
 }
-/*
-   .form__button:hover,
-   .form__button:focus,
-   .form__button:active
-   {
-    background-color: var(--comment-color);
-    box-shadow: 0px 4px 4px var(--box-shadow);
-   }*/

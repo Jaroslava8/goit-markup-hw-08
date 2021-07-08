@@ -20,7 +20,6 @@
 
   width: 100%;
   height: auto;
-
 }
 .team__name {
   /* padding: 30px;*/
@@ -99,19 +98,14 @@
     cursor: pointer;
   }
 }
-  .team__style {
-    margin-bottom: 30px;
-    border-radius: 0px 0px 4px 4px;
- 
-  }
-
+.team__style {
+  margin-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
 
 .team__style:last-child {
   margin-bottom: 0;
 }
-
-
-
 
 @media screen and (min-width: 768px) {
   .team__block {
@@ -119,10 +113,9 @@
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-  }}
+  }
+}
 
-
- 
 @media screen and (min-width: 768px) {
   .team__style {
     flex-basis: calc((100% - 60px) / 2);
@@ -130,10 +123,8 @@
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .team__style {
     flex-basis: calc((100% - 120px) / 4);
-
   }
 }

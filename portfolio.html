@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="vieport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Web studio </title>
     
@@ -50,7 +49,41 @@
         +38 096 111 11 11 </a>
     </li> 
   </ul>
-  
+  <button type="button" class="menu-open">
+    <svg class="mobile__open" width="40" height="40" >
+      <use href="./images/icons/menu.svg#icon-menu" >
+      </use>
+      </svg>
+  </button> 
+  <div class="mobile-nav is-hidden">
+    <div class="menu-container ">
+    <button type="button" class="menu-close">
+      <svg class="mobile__close" width="40" height="40" >
+        <use href="./images/icons/close.svg#icon-close-1" >
+        </use>
+        </svg>
+    </button>
+    <nav>
+  <ul class="mobile-menu list"> 
+    <li class="mobile-menu__item"><a href="mobile-menu__link link">Студия</a></li>
+    <li class="mobile-menu__item"><a href="./index.html">Портфолио</a></li>
+    <li class="mobile-menu__item"><a href="mobile-menu__link link">Контакты</a></li>
+  </ul>
+    </nav>
+    <div class="mobile-nav__bottom">
+    <ul class="mobile-contacts list"> 
+      <li class="mobile-contacts__item"><a href="tel:+38 096 111 11 11" class="mobile-contacts__link">+38 096 111 11 11</a></li>
+      <li class="mobile-contacts__item"><a href="email:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-media list"> 
+      <li class="mobile-media__item"><a href="" class="mobile-media__link">Instagram</a></li>
+      <li class="mobile-media__item"><a href="" class="mobile-media__link">Twitter</a></li>
+      <li class="mobile-media__item"><a href="" class="mobile-media__link">Facebook</a></li>
+      <li class="mobile-media__item"><a href="" class="mobile-media__link">LinkedIn</a></li>
+    </ul>
+  </div>
+  </div>
+  </div>
 
 </div>
   </header>
@@ -196,7 +229,7 @@
     
     
     <div class="floor">
-      <p class="floor__title">присоединяйтесь</p>
+      <h3 class="floor__title">присоединяйтесь</h3>
 
       <ul class="floor__icons"> 
         <li>
@@ -235,7 +268,7 @@
      
     </div>
     <div class="floor__box">
-      <p class="floor__title" > Подпишитесь на рассылку</p>
+      <h3 class="floor__title" > Подпишитесь на рассылку</h3>
       <ul class="user"> 
         <li>
           <input class="user__sign" name="user-sign" type="user-sign" placeholder="e-mail" >
@@ -252,6 +285,6 @@
 
  
 </footer>
-
+<script src="./js/menu.js"></script>
 </body>
 </html>
