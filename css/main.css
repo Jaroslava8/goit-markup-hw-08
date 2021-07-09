@@ -926,6 +926,7 @@ img {
 
 .button {
   width: 100%;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -943,6 +944,7 @@ img {
   text-align: center;
   cursor: pointer;
   border-style: none;
+  margin-bottom: 21px;
   box-shadow: 0px 3px 1px var(--modal-color), 0px 1px 2px var(--active-shadow);
   transition: bacground-color var(--active-transition), color var(--active-transition), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -963,6 +965,10 @@ img {
 
 button li {
   box-shadow: 0px 3px 1px var(--modal-color), 0px 1px 2px var(--active-shadow);
+}
+
+.button:not(:last-child) {
+  margin-right: 8px;
 }
 
 .backdrop {
