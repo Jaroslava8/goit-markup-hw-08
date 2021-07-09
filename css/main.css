@@ -167,11 +167,9 @@ img {
   color: var(--web-color);
 }
 
-.navigation .navigation__text {
+.navigation__text {
   display: block;
   font-family: var(--accent-font);
-  padding-top: 24px;
-  padding-bottom: 25px;
   margin-right: 93px;
   margin-top: 0;
   margin-left: 0;
@@ -199,8 +197,9 @@ img {
 .header .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
 }
 
 .container .navigation li:last-child {
@@ -327,7 +326,6 @@ img {
   /* max-width: 696px;*/
   max-width: 360px;
   text-align: center;
-  font-family: Roboto;
   /* line-height: 1.3636;*/
   line-height: 1.6153;
   /*  font-size: 44px;*/
@@ -505,6 +503,8 @@ img {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  height: 120px;
+  align-items: center;
 }
 
 .service {
@@ -516,6 +516,7 @@ img {
   /* padding: 94px 0;*/
   display: flex;
   justify-content: center;
+  display: none;
 }
 
 .service__heading {
@@ -530,6 +531,7 @@ img {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
+  display: none;
 }
 
 .service__unit {
@@ -581,7 +583,7 @@ img {
 .team__heading {
   font-style: "Roboto";
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.1719;
   padding: 0;
   margin-bottom: 50px;
@@ -718,7 +720,7 @@ img {
 .clients__title {
   text-align: center;
   margin-bottom: 50px;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.1719;
   letter-spacing: 0.03em;
   color: var(--second-color);
@@ -1446,12 +1448,6 @@ button li {
 
 .user__sign {
   width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .floor__icons {
-    margin-bottom: 60px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

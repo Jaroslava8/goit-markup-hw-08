@@ -56,12 +56,12 @@
 .navigation__logo {
   color: var(--web-color);
 }
-.navigation {
+
   .navigation__text {
     display: block;
     font-family: var(--accent-font);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    // padding-top: 16px;
+    // padding-bottom: 16px;
     margin-right: 93px;
     margin-top: 0;
     margin-left: 0;
@@ -69,7 +69,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.1738;
-  }
+  
 }
 
 .navigation__connection {
@@ -90,8 +90,9 @@
   .container {
     display: flex;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
   }
 }
 
