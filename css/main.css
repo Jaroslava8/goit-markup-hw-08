@@ -207,7 +207,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .header .container {
-    padding: 0;
+    padding: 0 15px;
   }
 }
 
@@ -401,7 +401,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .main {
-    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../opt-images/hero-tab-1x.jpg");
   }
 }
@@ -489,6 +488,12 @@ img {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .communication__title {
+    text-align: left;
+  }
 }
 
 .communication__text {
@@ -632,6 +637,12 @@ img {
   margin-right: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .team__title {
+    margin-bottom: 10px;
+  }
+}
+
 .team__profession {
   margin: 0;
   color: var(--main-text-color);
@@ -710,7 +721,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-top: -30px;
   }
 }
 
@@ -1468,6 +1478,12 @@ button li {
 
 .user__sign {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .user__sign {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
