@@ -4,12 +4,13 @@
   margin-left: auto;
   color: var(--text-color);
   color: var(--active-color);
+ 
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("./images/overlay.jpg");
+    url('../opt-images/hero-mob-1x.jpg');
 
   background-position: center;
   background-size: cover;
@@ -25,7 +26,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("./");
+      url("../opt-images/hero-mob-2x.jpg");
   }
 }
 
@@ -60,14 +61,22 @@
   color: var(--active-color);
   line-height: 1.875;
   border-radius: 4px;
-  margin-bottom: 0;
-  padding: 10px 32px;
+ 
   text-align: center;
   min-width: 200px;
   height: 50px;
   border: transparent;
-  margin-left: 140px;
-  margin-right: 140px;
+  // margin-left: 140px;
+  // margin-right: 140px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: .06em;
+  text-align: center;
 
   transition: background-color var(--active-transition);
 
@@ -88,6 +97,7 @@
   background-color: var(--order-bottom-active);
 }
 
+
 @media screen and (min-width: 768px) {
   .main {
     max-width: 768px;
@@ -95,7 +105,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("./images/overlay.jpg");
+      url("../opt-images/hero-tab-1x.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -104,7 +114,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("./images/overlay.jpg");
+        url("../opt-images/hero-tab-2x.jpg");
     }
   }
 }
@@ -116,7 +126,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("./images/overlay.jpg");
+      url("../opt-images/hero-desk-1x.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -127,7 +137,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("./images/overlay.jpg");
+        url("../opt-images/hero-desk-2x.jpg");
     }
   }
 

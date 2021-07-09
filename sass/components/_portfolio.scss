@@ -10,6 +10,8 @@
   line-height: 1.9;
   font-style: normal;
   width: 100%;
+ justify-content: center;
+ padding-top: 40px;
 }
 
 .portfolio__unit {
@@ -31,7 +33,7 @@
 
 .portfolio__image {
   display: block;
-
+ max-width: 100%;
   height: auto;
 }
 
@@ -48,9 +50,9 @@
       1px 4px 6px var(--color-shadow);
   }
 }
-.portfolio__photo:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
+// .portfolio__photo:not(:nth-child(3n)) {
+//   margin-right: 30px;
+// }
 
 .portfolio__box {
   width: 370px;
@@ -120,10 +122,11 @@
 }
 .button {
   width: 100%;
-  margin-bottom: 50px;
+ 
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .button__type {
@@ -138,6 +141,10 @@
   text-align: center;
   cursor: pointer;
   border-style: none;
+
+
+
+
   box-shadow: 0px 3px 1px var(--modal-color), 0px 1px 2px var(--active-shadow);
   transition: bacground-color var(--active-transition),
     color var(--active-transition),
@@ -161,6 +168,7 @@
 
 button {
   li {
+   
     box-shadow: 0px 3px 1px var(--modal-color), 0px 1px 2px var(--active-shadow);
   }
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Web studio </title>
      
 
@@ -163,14 +164,30 @@
 
   <ul class="service__section" > 
     <li class="service__unit"> 
-       <div class="service__products"> <img src="./images/photo(1).jpg" alt="logo" width="370" class="service__image">
+       <div class="service__products"> 
+         <img 
+         srcset="
+         ./opt-images/desktop-desk-1x.jpg 270w,
+         ./opt-images/desktop-desk-2x.jpg 540w"
+        
+         src="./opt-images/desktop-desk-1x.jpg" alt="logo" width="370" class="service__image">
     <div class="service__title"><p class="service__item">Десктопные приложения </p></div></div>
     </li>
-    <li class="service__unit"> <div class="service__products"><img src="./images/photo(2).jpg" alt="logo" width="370" class="service__image">
+    <li class="service__unit"> <div class="service__products">
+      <img
+      srcset="
+         ./opt-images/aplications-desk-1x.jpg 270w,
+         ./opt-images/aplications-desk-2x.jpg 540w"
+       src="./opt-images/aplications-desk-1x.jpg" alt="logo" width="370" class="service__image">
       <div class='service__title'><p class="service__item">Мобильные приложения </p></div> </div>  
     </li>
        
-    <li class="service__unit"> <div class="service__products"><img src="./images/photo(3).jpg" alt="logo" width="370" class="service__image">
+    <li class="service__unit"> <div class="service__products">
+      <img 
+      srcset="
+         ./opt-images/design-desk-1x.jpg 270w,
+         ./opt-images/design-desk-2x.jpg 540w"
+      src="./opt-images/design-desk-1x.jpg" alt="logo" width="370" class="service__image">
       <div class="service__title"><p class="service__item">Дизайнерские решения </p></div></div>
     </li> 
     
@@ -183,10 +200,21 @@
    <div  class="container" > 
   
   <h2 class="team__heading"> Наша команда</h2>
+
   <ul class="team__block">
     
     <li class="team__style">
-    <img src="./images/photo(4).jpg" alt="logo" width="270" class="team__image"> 
+    <img 
+    srcset="
+    ./opt-images/demianenko-desk-1x.jpg 270w,
+    ./opt-images/demianenko-desk-2x.jpg 540w,
+    ./opt-images/demianenko-tab-1x.jpg 354w,
+    ./opt-images/demianenko-tab-2x.jpg 708w,
+    ./opt-images/demianenko-mob-1x.jpg 450w,
+    ./opt-images/demianenko-mob-2x.jpg 900w
+    "
+    sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width) 450px, 290px"
+    src="./opt-images/demianenko-desk-1x.jpg" alt="logo"  class="team__image"> 
    <div class="team__name"> <h3 class="team__title">Игорь Демьяненко</h3>
     <p class="team__profession"> Product Designer</p>
     <ul class="social">
@@ -227,7 +255,17 @@
    </div>
    </li>
     <li class="team__style">
-      <img src="./images/photo(5).jpg" alt="logo" width="270" class="team__image">
+      <img 
+      srcset="
+      ./opt-images/repina-desk-1x.jpg 270w,
+      ./opt-images/repina-desk-2x.jpg 540w,
+      ./opt-images/repina-tab-1x.jpg 354w,
+      ./opt-images/repina-tab-2x.jpg 708w,
+      ./opt-images/repina-mob-1x.jpg 450w,
+      ./opt-images/repina-mob-2x.jpg 900w
+      "
+      sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width) 450px, 290px"
+      src="./opt-images/repina-desk-1x.jpg" alt="logo"  class="team__image">
       <div class="team__name"> 
       <h3 class="team__title">Ольга Репина</h3>
      <p class="team__profession"> Frontend Developer</p>
@@ -268,7 +306,17 @@
     </div>
    </li>
     <li class="team__style">
-      <img src="./images/photo(6).jpg" alt="logo" width="270" class="team__image">
+      <img
+      srcset="
+      ./opt-images/tarasov-desk-1x.jpg 270w,
+      ./opt-images/tarasov-desk-2x.jpg 540w,
+      ./opt-images/tarasov-tab-1x.jpg 354w,
+      ./opt-images/tarasov-tab-2x.jpg 708w,
+      ./opt-images/tarasov-mob-1x.jpg 450w,
+      ./opt-images/tarasov-mob-2x.jpg 900w
+      "
+      sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width) 450px, 290px"
+      src="./opt-images/tarasov-desk-1x.jpg" alt="logo"  class="team__image">
       <div class="team__name">
       <h3 class="team__title">Николай Тарасов</h3>
       <p class="team__profession"> Marketing</p>
@@ -309,7 +357,17 @@
      </div>
      </li>
      <li class="team__style">
-     <img src="./images/photo(7).jpg" alt="logo" width="270" class="team__image">
+     <img 
+     srcset="
+     ./opt-images/ermakov-desk-1x.jpg 270w,
+     ./opt-images/ermakov-desk-2x.jpg 540w,
+     ./opt-images/ermakov-tab-1x.jpg 354w,
+     ./opt-images/ermakov-tab-2x.jpg 708w,
+     ./opt-images/ermakov-mob-1x.jpg 450w,
+     ./opt-images/ermakov-mob-2x.jpg 900w
+     "
+     sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width) 450px, 290px"
+     src="./opt-images/ermakov-desk-1x.jpg" alt="logo"  class="team__image">
      <div class="team__name"> 
      <h3 class="team__title">Михаил Ермаков</h3>
      <p class="team__profession"> UI Designer</p>
@@ -362,42 +420,42 @@
    <ul class="clients__list">
     <li class=clients__unit>
       <a class="cliens__item" >
-      <svg class="clients__icon" width='41' height='46.7' >
+      <svg class="clients__icon"  >
         <use href="./images/icons/sprite.svg#icon-company1" ></use> 
       </svg>
       </a>
     </li>
     <li class=clients__unit >
       <a  class="cliens__item">
-      <svg  class="clients__icon" width='40' height='52'>
+      <svg  class="clients__icon" >
         <use href="./images/icons/sprite.svg#icon-company2"></use> 
       </svg>
       </a>
     </li>
     <li class=clients__unit>
       <a class="cliens__item">
-      <svg class="clients__icon"  width='43.46' height='41.18'>
+      <svg class="clients__icon" >
         <use href="./images/icons/sprite.svg#icon-company3"></use> 
       </svg>
       </a>
     </li>
     <li class=clients__unit>
       <a class="cliens__item" >
-      <svg class="clients__icon" width='84.44' height='40.62'>
+      <svg class="clients__icon" >
         <use href="./images/icons/sprite.svg#icon-company4"></use> 
       </svg>
       </a>
     </li>
     <li class=clients__unit>
       <a class="cliens__item">
-      <svg class="clients__icon" width='62.54' height='45.43' >
+      <svg class="clients__icon"  >
         <use href="./images/icons/sprite.svg#icon-company5"></use> 
       </svg>
       </a>
     </li>
     <li class=clients__unit>
       <a  class="cliens__item">
-      <svg class="clients__icon" width='93.79' height='43.93'>
+      <svg class="clients__icon">
         <use href="./images/icons/sprite.svg#icon-company6"></use> 
       </svg>
       </a>
@@ -409,6 +467,7 @@
 <!--Footer contacts-->
 <footer class="footer"   > 
   <div class="container" >
+    <div class="footer__top">
     <div class="footer__contacts"> 
     <a href="" class="footer__text"> <span class="footer__logo">Web</span>Studio </a>
     <address class="footer__address"> <p>г. Киев, пр-т Леси Украинки, 26</p></address>
@@ -459,6 +518,7 @@
       </ul>
      
     </div>
+  </div>
     <div class="floor__box">
     <h3 class="floor__title" > Подпишитесь на рассылку</h3>
     <ul class="user"> 

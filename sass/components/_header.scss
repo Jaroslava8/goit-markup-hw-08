@@ -1,15 +1,18 @@
 .header {
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
-  font-weight: 500;
+  font-weight: 700;
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 24px;
   line-height: 1.1721;
+  letter-spacing: 0.03em;
   background: var(--active-color);
   color: var(--text-color);
   margin: 0 auto;
-  align-items: center;
+  align-items: baseline;
+
 }
+
 
 .navigation {
   display: flex;

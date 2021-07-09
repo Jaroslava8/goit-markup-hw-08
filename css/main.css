@@ -87,11 +87,11 @@ a {
 
 .section {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    width: 1200px;
     padding-top: 90px;
     padding-bottom: 90px;
   }
@@ -103,6 +103,11 @@ b {
   display: block;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -112,14 +117,15 @@ b {
 .header {
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
-  font-weight: 500;
+  font-weight: 700;
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 24px;
   line-height: 1.1721;
+  letter-spacing: 0.03em;
   background: var(--active-color);
   color: var(--text-color);
   margin: 0 auto;
-  align-items: center;
+  align-items: baseline;
 }
 
 .navigation {
@@ -295,7 +301,7 @@ b {
   margin-left: auto;
   color: var(--text-color);
   color: var(--active-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/overlay.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../opt-images/hero-mob-1x.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -306,7 +312,7 @@ b {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../opt-images/hero-mob-2x.jpg");
   }
 }
 
@@ -340,14 +346,19 @@ b {
   color: var(--active-color);
   line-height: 1.875;
   border-radius: 4px;
-  margin-bottom: 0;
-  padding: 10px 32px;
   text-align: center;
   min-width: 200px;
   height: 50px;
   border: transparent;
-  margin-left: 140px;
-  margin-right: 140px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: .06em;
+  text-align: center;
   transition: background-color var(--active-transition);
 }
 
@@ -372,20 +383,20 @@ b {
 @media screen and (min-width: 768px) {
   .main {
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/overlay.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../opt-images/hero-tab-1x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/overlay.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../opt-images/hero-tab-2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main {
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/overlay.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../opt-images/hero-desk-1x.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -393,7 +404,7 @@ b {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/overlay.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../opt-images/hero-desk-2x.jpg");
   }
 }
 
@@ -403,11 +414,6 @@ b {
     font-size: 44px;
     line-height: 1.36;
   }
-}
-
-.communication .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .communication .section {
@@ -448,7 +454,6 @@ b {
 .communication__icons {
   display: flex;
   -webkit-box-align: center;
-  align-items: center;
   justify-content: center;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -494,11 +499,12 @@ b {
 }
 
 .communication__icon {
-  display: inline-block;
-  align-items: center;
   /*  margin-bottom: 30px;*/
   background: #f5f4fa;
   border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .service {
@@ -585,14 +591,9 @@ b {
   text-align: center;
 }
 
-.team__image {
-  /* margin-right: 30px;*/
-  width: 100%;
-  height: auto;
-}
-
 .team__name {
   /* padding: 30px;*/
+  width: 100%;
   padding-bottom: 10px;
   padding-top: 30px;
   background: var(--active-color);
@@ -705,17 +706,13 @@ b {
   }
 }
 
-.clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .cliens__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 106px;
-  height: 60px;
+  width: 100%;
+  height: 92px;
+  display: flex;
 }
 
 .clients__title {
@@ -728,6 +725,9 @@ b {
 }
 
 .clients__icon {
+  display: block;
+  width: 106px;
+  height: 60px;
   fill: #afb1b8;
   justify-content: center;
   transition: fill var(--active-transition);
@@ -784,11 +784,12 @@ b {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .clients__unit {
     flex-basis: calc((100% - 60px) / 2);
   }
@@ -817,6 +818,8 @@ b {
   line-height: 1.9;
   font-style: normal;
   width: 100%;
+  justify-content: center;
+  padding-top: 40px;
 }
 
 .portfolio__unit {
@@ -838,6 +841,7 @@ b {
 
 .portfolio__image {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -852,10 +856,6 @@ b {
 
 .portfolio__photo:focus {
   box-shadow: 0px 1px 1px var(--first-shadow), 0px 4px 4px var(--last-shadow), 1px 4px 6px var(--color-shadow);
-}
-
-.portfolio__photo:not(:nth-child(3n)) {
-  margin-right: 30px;
 }
 
 .portfolio__box {
@@ -926,10 +926,9 @@ b {
 
 .button {
   width: 100%;
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button__type {
@@ -1360,10 +1359,12 @@ button li {
 }
 
 .footer__contacts {
-  /* margin-right: 70px;*/
+  display: inline-block;
   margin-bottom: 60px;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .floor {
@@ -1372,6 +1373,7 @@ button li {
   margin-bottom: 60px;
   flex-direction: column;
   align-items: center;
+  display: flex;
 }
 
 .floor__box {
@@ -1390,12 +1392,9 @@ button li {
   text-transform: uppercase;
   color: var(--active-color);
   margin-bottom: 20px;
+  text-align: center;
 }
 
-/*
-.floor__box {
-  margin-left: 93px;
-}*/
 .floor__link {
   width: 44px;
   height: 44px;
@@ -1415,7 +1414,6 @@ button li {
   transition: fill var(--active-transition), background-color var(--active-transition);
 }
 
-/* outline: 1px dashed red;*/
 .floor__link {
   border: none;
 }
@@ -1438,6 +1436,54 @@ button li {
   width: 20px;
   height: 20px;
   fill: var(--active-color);
+}
+
+.user__sign {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .floor__icons {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  .footer__contacts {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer__contacts {
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .footer__top {
+    display: flex;
+    align-items: baseline;
+  }
+  .floor__box {
+    margin-left: auto;
+    display: flex;
+  }
+  .floor {
+    margin-right: 93px;
+    display: inline-block;
+  }
+  .footer__contact {
+    text-align: left;
+  }
 }
 
 .sign {
@@ -1470,12 +1516,10 @@ button li {
 }
 
 .user__sign {
-  width: 100%;
   display: block;
   /* width: 358px;
-margin-right: 12px;
-  padding-left: 16px;*/
-  width: 100%;
+margin-right: 12px;*/
+  padding-left: 16px;
   height: 50px;
   margin-bottom: 20px;
   color: var(--contact-color);
