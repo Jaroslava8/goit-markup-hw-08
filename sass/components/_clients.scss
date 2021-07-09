@@ -1,4 +1,12 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .cliens__item {
   display: flex;
@@ -16,7 +24,6 @@
   //   fill: var(--web-color);
   //   border-color: var(--web-color);
   //   cursor: pointer;}
-
 }
 .clients__title {
   text-align: center;
@@ -25,15 +32,18 @@
   line-height: 1.1719;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .clients__icon {
   display: block;
   width: 106px;
   height: 60px;
- 
+
   justify-content: center;
-  
+
   &:hover {
     fill: var(--web-color);
   }
@@ -42,12 +52,10 @@
   }
 }
 .clients__unit {
-  
   &:hover {
     fill: var(--web-color);
     border-color: var(--web-color);
     cursor: pointer;
-    
   }
   &:focus {
     fill: var(--web-color);
@@ -88,7 +96,6 @@
     border-color var(--active-transition);
   margin-left: 30px;
   margin-top: 30px;
-
 }
 
 .clients__list {

@@ -1,6 +1,11 @@
 .team {
   background: var(--button-background);
   padding: 60px 0;
+  @media screen and (min-width:1200px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+  }
 }
 
 .team__heading {
@@ -14,6 +19,10 @@
   margin-left: 0;
   margin-right: 0;
   text-align: center;
+  @media screen and (min-width:1200px){
+    font-size: 36px;
+    
+  }
 
 }
 
