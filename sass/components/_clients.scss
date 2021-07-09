@@ -7,6 +7,15 @@
   width: 100%;
   height: 92px;
   display: flex;
+  // &:hover {
+  //   fill: var(--web-color);
+  //   border-color: var(--web-color);
+  //   cursor: pointer;
+  // }
+  // &:focus {
+  //   fill: var(--web-color);
+  //   border-color: var(--web-color);
+  //   cursor: pointer;}
 
 }
 .clients__title {
@@ -22,9 +31,9 @@
   display: block;
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+ 
   justify-content: center;
-  transition: fill var(--active-transition);
+  
   &:hover {
     fill: var(--web-color);
   }
@@ -33,10 +42,12 @@
   }
 }
 .clients__unit {
+  
   &:hover {
     fill: var(--web-color);
     border-color: var(--web-color);
     cursor: pointer;
+    
   }
   &:focus {
     fill: var(--web-color);
@@ -64,6 +75,7 @@
 }
 
 .clients__unit {
+  fill: #afb1b8;
   height: 92px;
 
   display: flex;
@@ -76,6 +88,7 @@
     border-color var(--active-transition);
   margin-left: 30px;
   margin-top: 30px;
+
 }
 
 .clients__list {

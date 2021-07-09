@@ -104,7 +104,7 @@ b {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -119,7 +119,7 @@ img {
   border-bottom: 1px solid #ececec;
   font-weight: 700;
   font-family: "Roboto";
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.1721;
   letter-spacing: 0.03em;
   background: var(--active-color);
@@ -133,8 +133,13 @@ img {
 }
 
 .navigation__box {
-  display: flex;
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__box {
+    display: flex;
+  }
 }
 
 .navigation__unit,
@@ -170,7 +175,7 @@ img {
 .navigation__text {
   display: block;
   font-family: var(--accent-font);
-  margin-right: 93px;
+  margin-right: 88px;
   margin-top: 0;
   margin-left: 0;
   margin-bottom: 0;
@@ -213,6 +218,8 @@ img {
 .navigation__link {
   color: var(--web-color);
   transition: color var(--active-transition);
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .navigation__connection:hover {
@@ -251,7 +258,6 @@ img {
 }
 
 .nav {
-  display: flex;
   justify-content: center;
   margin-right: 0;
   padding: 0;
@@ -264,10 +270,19 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .nav__contacts {
   display: flex;
   transition: var(--active-transition);
   align-items: center;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .nav :not(:last-child) {
@@ -295,7 +310,6 @@ img {
 }
 
 .main {
-  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   color: var(--text-color);
@@ -596,7 +610,7 @@ img {
 .team__name {
   /* padding: 30px;*/
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 24px;
   padding-top: 30px;
   background: var(--active-color);
   box-shadow: 0px 1px 3px var(--first-shadow), 0px 1px 1px var(--second-shadow), 0px 2px 1px var(--third-shadow);
@@ -652,19 +666,17 @@ img {
   height: 44px;
   border: none;
   transition: fill var(--active-transition), background-color var(--active-transition);
+  fill: var(--icon-color);
 }
 
 .social__link:hover {
   background: var(--order-bottom-active);
+  fill: var(--active-color);
 }
 
 .social__link:focus {
   background: var(--order-bottom-active);
-}
-
-.social__icon {
-  fill: var(--icon-color);
-  transition: fill var(--active-transition), background-color var(--active-transition);
+  fill: var(--active-color);
 }
 
 .social__icon:hover {
@@ -730,9 +742,7 @@ img {
   display: block;
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
   justify-content: center;
-  transition: fill var(--active-transition);
 }
 
 .clients__icon:hover {
@@ -772,6 +782,7 @@ img {
 }
 
 .clients__unit {
+  fill: #afb1b8;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -1330,6 +1341,7 @@ button li {
 .footer__address p {
   display: block;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .footer__address {
@@ -1364,6 +1376,7 @@ button li {
 
 .footer__contact {
   margin-top: 9px;
+  text-align: center;
 }
 
 .footer__contacts {
@@ -1560,6 +1573,7 @@ margin-right: 12px;*/
 .sign__button {
   /*display: inline-block;*/
   display: block;
+  display: flex;
   align-items: center;
   width: 200px;
   height: 50px;
@@ -1639,6 +1653,12 @@ margin-right: 12px;*/
 .menu-open:focus {
   cursor: pointer;
   fill: var(--decor-color);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .menu-close {
