@@ -67,6 +67,10 @@ margin-right: 12px;*/
   &:active {
     border-color: var(--decor-color);
   }
+  @media screen and (min-width:1200px) {
+    margin-bottom: 0;
+    
+  }
 }
 /*
 .user__sign:hover,
@@ -113,6 +117,10 @@ margin-right: 12px;*/
   }
   &:active {
     background-color: var(--decor-color);
+  }
+  @media screen and (min-width:1200px) {
+    margin-left: 12px;
+    
   }
 }
 /*

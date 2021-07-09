@@ -80,6 +80,11 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  @media screen and (min-width:1200px){
+    align-items: flex-start;
+
+    
+  }
 }
 .floor {
   /*  display: inline-block;
@@ -94,7 +99,11 @@
   // display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  @media screen and (min-width:1200px){
+   align-items: flex-start;
+  }
+
+
 }
 
 .floor__title {
@@ -108,6 +117,10 @@
   color: var(--active-color);
   margin-bottom: 20px;
   text-align: center;
+
+  @media screen and (min-width:1200px){
+    text-align: left;
+  }
 }
 
 
