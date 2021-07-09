@@ -911,9 +911,13 @@ img {
   font-size: 14px;
   line-height: 1.9;
   font-style: normal;
-  width: 100%;
   justify-content: center;
-  padding-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__container {
+    margin-right: -30px;
+  }
 }
 
 .portfolio__unit {
@@ -935,7 +939,7 @@ img {
 
 .portfolio__image {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -953,20 +957,20 @@ img {
 }
 
 .portfolio__box {
-  width: 370px;
   position: relative;
   overflow: hidden;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio__photo {
-    flex-basis: calc((100% - 60px) / 2);
+    width: 450px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio__photo {
-    flex-basis: calc((100% - 90px) / 3);
+    width: 354px;
+    margin-right: 30px;
   }
 }
 
@@ -1023,7 +1027,6 @@ img {
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .button__type {
