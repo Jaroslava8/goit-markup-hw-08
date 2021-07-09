@@ -160,8 +160,6 @@ img {
   align-items: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 32px;
-  padding-top: 32px;
 }
 
 .header a {
@@ -205,6 +203,12 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header .container {
+    padding: 0;
+  }
 }
 
 .container .navigation li:last-child {
@@ -274,6 +278,7 @@ img {
   .nav {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -285,8 +290,10 @@ img {
   font-weight: 500;
 }
 
-.nav :not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .nav__contacts {
+    margin-bottom: 10px;
+  }
 }
 
 .nav__contacts:hover {
