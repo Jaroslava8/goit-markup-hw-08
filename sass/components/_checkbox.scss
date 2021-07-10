@@ -1,7 +1,7 @@
 .check__label {
   margin-top: 20px;
   // margin-left: 40px;
-  margin-right: 40px;
+
   justify-content: center;
 }
 .check__text {
@@ -11,9 +11,9 @@
   font-weight: 400;
  font-size: 12px;
   line-height: 1.1716;
-  letter-spacing: 0.03em;
+
   color: var(--main-text-color);
-  margin-left: 9px;
+  margin-left: 8px;
 
   @media screen and (min-width:1200px){
     line-height: 1.7142;
@@ -21,6 +21,7 @@
   }
 }
 .check-option {
+ 
   text-decoration: underline;
   color: var(--decor-color);
   font-weight: 400;
@@ -54,12 +55,12 @@
     fill var(--active-transition);
 }
 .check__label {
-  margin-right: 9px;
+
   margin-right: 0;
 
   display: inline-block;
   display: flex;
-  align-items: center;
+  justify-content: center;
 
 
 }
